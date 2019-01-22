@@ -34,7 +34,7 @@ export default class App extends Component<Props> {
           const myCar = realm.create('Car', {
             id: 1,
             make: 'Honda',
-            //model: 'Civic', // Omitting required parameter -> Crashes...
+            //model: 'Civic', // Omitting required parameter -> Crashes... With parameter -> no crash
             miles: 1000
           });
           console.log('Updating mileage...');
